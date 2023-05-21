@@ -1,0 +1,27 @@
+.projects-wrapper {
+  padding-bottom: 4rem;
+}
+
+.projects-wrapper .project-wrapper:nth-child(3) .project-demo {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects-wrapper .project-wrapper:nth-child(4) .project-demo {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects-wrapper .project-wrapper:nth-child(3) .project-demo img:first-child {
+  grid-column: 1 / span 1;
+}
+
+.projects-wrapper .project-wrapper:nth-child(4) .project-demo img:first-child {
+  grid-column: 1 / span 1;
+}
+
+.projects-wrapper .project-wrapper:nth-child(3) .open-image {
+  height: 75%;
+}
+
+.projects-wrapper .project-wrapper:nth-child(4) .open-image {
+  height: 75%;
+}

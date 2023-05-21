@@ -1,0 +1,95 @@
+.about-wrapper {
+  position: relative;
+}
+
+.about-inner-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-inner-wrapper h1 {
+  max-width: 20em;
+  font-size: 48px;
+  margin: 0 0 50px;
+  color: #fff;
+  font-family: var(--font-family);
+}
+
+.about-inner-wrapper p {
+  max-width: 20em;
+  font-size: 30px;
+  line-height: 1.5em;
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: var(--font-family);
+}
+
+.about-inner-wrapper a {
+  color: var(--color-main);
+  transition: 200ms;
+  border-bottom: 1px dotted #777;
+  padding-bottom: 3px;
+}
+
+.about-inner-wrapper a:hover {
+  color: #fff;
+}
+
+.about-side {
+  flex: 1.5;
+}
+
+.contact-side {
+  flex: 1;
+}
+
+.contact-img {
+  height: 250px;
+  padding: 1rem 2rem 0rem 2rem;
+  background-color: #151515;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact-img img {
+  object-fit: contain;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.about-inner-wrapper a.email-button {
+  background-color: var(--color-main);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 1rem;
+  color: #fff;
+  width: 100%;
+  display: block;
+  border-bottom: none;
+  font-family: var(--font-family);
+  transition: 200ms;
+}
+
+.about-inner-wrapper a.email-button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 992px) {
+  .about-inner-wrapper {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .about-inner-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .about-inner-wrapper p {
+    max-width: max-content;
+    font-size: 24px;
+  }
+}
